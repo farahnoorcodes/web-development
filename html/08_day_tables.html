@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables in html</title>
+</head>
+<body>
+    <p>Tables are used to display data in a tabular format. They consist of rows and columns, making it easy to organize and present information.using &lt;table&gt; tag , &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements.</p>
+    
+    <p>Here is an example of a simple table:</p>
+    <table>
+        
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+    <p>you can also add captions to tables using the &lt;caption&gt; tag, which provides a title or description for the table. </p>
+    <p>example of a table with a caption:</p>
+    <table>
+        <caption>Sample Table</caption>
+        
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    
+    <br>
+    </table>
+    <p>tables can also add headers and footers to provide additional context and information.</p>
+    for example, you can use the &lt;thead&gt; and &lt;tfoot&gt; elements to define the header and footer sections of a table. The &lt;thead&gt; element contains the header row(s), while the &lt;tfoot&gt; element contains the footer row(s). Here's an example:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    you can make table of any length and width by adding more rows and columns as needed. <br>
+    for example, you can create a table with 5 rows and 4 columns like this:
+    <br><br>
+    <table>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+            <td>Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+            <td>Row 3, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 4, Cell 1</td>
+            <td>Row 4, Cell 2</td>
+            <td>Row 4, Cell 3</td>
+            <td>Row 4, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 5, Cell 1</td>
+            <td>Row 5, Cell 2</td>
+            <td>Row 5, Cell 3</td>
+            <td>Row 5, Cell 4</td>
+        </tr>
+    </table>
+    <p>
+        more you can also use the &lt;colgroup&gt; and &lt;col&gt; elements to define column groups and apply styles to specific columns. This can be useful for formatting and styling tables with multiple columns.
+    </p>
+    for example, you can create a table with column groups like this:
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: lightgray;">
+            <col span="2" style="background-color: lightblue;">
+        </colgroup>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+            <td>Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+        </tr>
+    </table>
+    this is how you add colours to your table using the &lt;colgroup&gt; and &lt;col&gt; elements. this can help to visually distinguish different sections of the table and make it easier to read and understand the data.
+    <p>
+        another example of a table with column groups and different styles applied to each group:
+    </p>
+    <table>
+        <colgroup>
+            <col span="1" style="background-color: lightgreen;">
+            <col span="1" style="background-color: lightcoral;">
+            <col span="1" style="background-color: rgb(57, 44, 205);">
+            <col span="1" style="background-color: rgb(153, 42, 94);">
+
+        </colgroup>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+            <td>Row 1, Cell 4</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+            <td>Row 2, Cell 4</td>
+        </tr>
+    </table>
+    <p>
+        you can do the same for rows using the &lt;tbody&gt; and &lt;tfoot&gt; elements to define row groups and apply styles to specific rows. This can be useful for formatting and styling tables with multiple rows.
+    </p>
+    for example, you can create a table with row groups of header,body,footer like this:
+    <table>
+        <thead style="background-color: rgb(128, 128, 128);">
+            <tr>
+                <td>Header Row, Cell 1</td>
+                <td>Header Row, Cell 2</td>
+                <td>Header Row, Cell 3</td>
+                <td>Header Row, Cell 4</td>
+            </tr>
+        </thead>
+        <tbody style="background-color: rgb(247, 247, 4);">
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+                <td>Row 1, Cell 4</td>          
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+                <td>Row 2, Cell 4</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: rgb(128, 128, 128);">
+            <tr>
+                <td>Footer Row, Cell 1</td>
+                <td>Footer Row, Cell 2</td>
+                <td>Footer Row, Cell 3</td>
+                <td>Footer Row, Cell 4</td>
+            </tr>
+        </tfoot>    
+    </table>
+    <p>
+        more we formatting and styling options are available for tables in HTML, including the use of CSS to apply custom styles and layouts. By combining HTML and CSS, you can create visually appealing and functional tables that effectively present data to users.IN FUTURE, I WILL ALSO COVER CSS STYLING OF TABLES IN HTML.
+    </p>
+    <p>
+        i hope this helps you understand how to create and style tables in HTML. If you have any further questions or need more examples, feel free to ask!
+    </p>
+</body>    
+</html>
