@@ -1,16 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
 </head>
+
 <body>
     <p>form are used to make website interactive to the user.</p>
-    <h3>User Interaction:</h3> Tables and lists are for displaying data. Forms are the primary way to collect data from users (login, search, contact, registration).
-<br>
-    <h3>Gateway to JavaScript:</h3> Forms are the perfect bridge between HTML and your javascript folder. You can teach how to capture form data using JS.<!--we will learn about javascript later-->
-<br>
+    <h3>User Interaction:</h3> Tables and lists are for displaying data. Forms are the primary way to collect data from
+    users (login, search, contact, registration).
+    <br>
+    <h3>Gateway to JavaScript:</h3> Forms are the perfect bridge between HTML and your javascript folder. You can teach
+    how to capture form data using JS.<!--we will learn about javascript later-->
+    <br>
     <h3>Practicality:</h3> It allows you to introduce new input types that are essential for modern web development.
+    <br>
+    <h4>tags and attributes:</h4>
+    we use &lt;form&gt; tag to make forms.
+    
+   
+    <ol>
+        <li> &lt;form&gt;</li>
+        <li>  input attribute</li>
+        <li>label </li>
+        <li> id</li>
+        <li> for</li>
+        <li> value</li>
+        <li> name</li>
+        <li> type</li>
+        <li> text, to select one "radio", to mark "checkbox", dropdown  "select", for long text data "typearea"</li>
+        <li> rows, cols</li>
+    </ol>
+    <form action="post">
+        <label for="username">username</label><!-- lable Tells the user what to type (visible text)-->
+        <!--The 'for' attribute connects the label to the input.  The for attribute says "I belong to the input with ID 'username'"-->
+        <input type="text" id="username" name="username" placeholder="enter your username"
+            autofocus><!-- This is the unique name that connects the label to this input. The 'id' attribute must match the label's 'for' value -->
+        <!--type="text" → This defines what kind of input it is (text, email, password, etc.)-->
+        <br>
+        <h4>select your gender</h4>
+        <input type="radio" id="male" name="gender" value="male">
+        <!-- RADIO BUTTONS: Used when user should select ONLY ONE option -->
+        <!-- All radio buttons with the SAME 'name' attribute belong to the same group -->
+        <!-- Only one radio button in a group can be selected at a time -->
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender"
+            value="female"><!-- 'value' is what gets sent when form is submitted -->
+        <label for="female">female</label>
+        <h4>instruction:</h4>
+        <div>
+            <input type="checkbox" id="follow" name="follow" value="yes">
+            <!-- If checked, value "yes" is sent to the server -->
+            <!-- If unchecked, nothing is sent for this field -->
+            <label for="follow">follow farah.___noor on instagram</label>
+        </div>
+        <h4>feedback:</h4>
+        <div>
+            <label for="comment">enter you comment:</label>
+            <br>
+            <textarea id="comment" rows="4" cols="50" name="comment"> </textarea>
+            <!-- TEXTAREA: Used for multi-line text input -->
+            <!-- Perfect for comments, messages, or long responses -->
+            <!-- rows="4" → textarea will show 4 lines tall -->
+            <!-- cols="50" → textarea will be 50 characters wide -->
+            <!-- name="comment" → identifies this field when form is submitted -->
+        </div>
+        <h4>select your study</h4>
+        <div>
+            <!-- DROPDOWN (SELECT): Used when user needs to choose from a list -->
+            <!-- Takes less space than radio buttons for many options -->
+            <!-- User can only select ONE option from the dropdown -->
+            <select name="study"> <!-- 'name="study"' identifies this dropdown when form is submitted -->
+                <option value="school">school</option><!-- value="school" → sent to server if selected -->
+                <!-- Display text: "school" (what user sees) -->
+                <option value="college">college</option>
+                <option value="university">university</option> <!-- Add more options as needed -->
+                <!-- By default, the first option is selected -->
+                <!-- User clicks dropdown to see and choose other options -->
+            </select>
+        </div>
+    </form>
 </body>
+
 </html>
