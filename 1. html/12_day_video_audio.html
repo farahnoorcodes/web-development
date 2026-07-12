@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video</title>
+</head>
+<body>
+    <h1>Audio and Video</h1>
+    <br>
+        Some important attributes:
+        <br>
+        <pre>
+            src = source (short form) :
+            -> Tells the browser where the file is located — the path or URL to your audio/video file.
+            -> Example: src="hooligan.mp3" means "look for a file called hooligan.mp3 in this same folder."
+            type = tells the browser what format/type the file is, so it knows how to handle it.
+            -> type="audio/mpeg" → this is an MP3 audio file
+            -> type="video/mp4" → this is an MP4 video file
+        </pre>
+    <p>
+        <h2>Audio</h2>
+        you can add audio in your web page using &lt;audio&gt; tag.
+        
+        <h3>steps of adding audio:</h3>
+        <ul type="disc">
+            <li>Place your audio file in the same folder as your HTML file (or note its subfolder path).</li>
+            <li>first add audio tag with "controls" written in the opening tag</li>
+            <li>second, add source tag inside the audio tag</li>
+            <li>add src and type attributes inside source — tells the browser where the file is and what format it is</li>
+            <li>Fallback text__If you want to type something in the case browser unable to load your file then type msg in audio tag that only appear when file doesn't load</li>
+        </ul>
+    </p>
+    <audio controls>
+    <source src="hooligan.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+<h1>Video</h1>
+you can add video in your webpages using &lt;video&gt; tag.
+<br>
+<h3>step of adding video</h3>
+<ul type="disc">
+    <li> Place your video file in the same folder as your HTML file (or note its subfolder path).</li>
+    <li>Use the &lt;video&gt; tag with "controls" written inside opening tag</li>
+    <li>add &lt;source&gt; inside video tag</li>
+    <li>add src and type attributes inside source — tells the browser where the file is and what format it is</li>
+    <li>Fallback text — shows only if the browser can't play &lt;video&gt; at all</li>
+</ul>
+<video controls>
+    <source src="controling_laugh.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<h2>key attributes :</h2>
+<ul>
+     <li>control-> Play/pause/volume controls</li>
+    <li>autoplay-> Plays automatically, use with mute to avoid interruption</li>
+    <li>loop-> Repeats the video</li>
+    <li>mute-> Starts with no sound</li>
+    <li>poster ="thumbnail.jpg"-> Shows an image before the video plays</li>
+   <li>preload-> Preload set to load only metadata (like duration), not the whole file, until user hits play:</li>
+   <li>height and width of video files</li>
+</ul>
+<h3>muted audio</h3>
+<audio controls muted>
+    <source src="meow.mp3" type="audio/mpeg">
+</audio>
+<h3>autoplay audio</h3>
+<audio controls autoplay muted>
+    <source src="nahnonanana.mp3" type="audio/mpeg">
+</audio>
+<h3>loop audio</h3>
+<audio controls loop>
+    <source src="hooligan.mp3" type="audio/mpeg">
+</audio>
+<h3>preload audio</h3>
+<audio controls preload="metadata">
+    <source src="hooligan.mp3" type="audio/mpeg">
+</audio>
+<h3>adjusted width video</h3>
+<video width="400" controls>
+    <source src="controling_laugh.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<h3>autoplay + muted + height adjusted video</h3>
+<video height="500" autoplay muted>
+    <source src="disappointed.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<h3>loop video</h3>
+<video width="400" controls loop>
+    <source src="disgusting.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<h3> poster video</h3>
+<video width="400" controls poster="farah.jpg">
+    <source src="laughing_child.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</body>
+</html>
