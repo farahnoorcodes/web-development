@@ -30,10 +30,10 @@
         <li> value</li>
         <li> name</li>
         <li> type</li>
-        <li> text, to select one "radio", to mark "checkbox", dropdown  "select", for long text data "typearea"</li>
+        <li> text, to select one "radio", to mark "checkbox", dropdown  "select", for long text data "textarea"</li>
         <li> rows, cols</li>
     </ol>
-    <form action="post">
+    <form action="/submit" method="post">
         <label for="username">username</label><!-- lable Tells the user what to type (visible text)-->
         <!--The 'for' attribute connects the label to the input.  The for attribute says "I belong to the input with ID 'username'"-->
         <input type="text" id="username" name="username" placeholder="enter your username"
@@ -60,7 +60,7 @@
         <div>
             <label for="comment">enter you comment:</label>
             <br>
-            <textarea id="comment" rows="4" cols="50" name="comment"> </textarea>
+            <textarea id="comment" rows="4" cols="50" name="comment"></textarea>
             <!-- TEXTAREA: Used for multi-line text input -->
             <!-- Perfect for comments, messages, or long responses -->
             <!-- rows="4" → textarea will show 4 lines tall -->
