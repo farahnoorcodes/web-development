@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic elements</title>
+</head>
+<body>
+    <h1>Nav, Main, Section, Span tags</h1>
+    <h3>Nav:</h3>
+    <p><pre>
+        &lt;nav&gt; — Block-level, semantic
+
+Wraps a group of navigation links (menu, sidebar links, pagination).
+Not every link needs to be inside &lt;nav&gt; — only major navigation blocks.
+Example: your site's top menu (Home, About, Contact).
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+</pre style=></p>
+    <h3>Main:</h3>
+    <pre>
+        &lt;main&gt; — Block-level, semantic
+
+Wraps the primary content of the page (the unique stuff, not header/footer/nav).
+Only ONE &lt;main&gt; per page.
+Helps screen readers jump straight to the real content.
+Here's a focused example of just &lt;main&gt; in isolation:
+<main>
+    <h1>Welcome to My Website</h1>
+    <p>This is the primary content of the page — the actual reason someone visited.</p>
+</main>
+A more complete example, showing where &lt;main&gt; fits alongside other tags:
+    <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+</nav>
+
+<main>
+    <h1>About Me</h1>
+    <p>I am a Computer Engineering student learning HTML step by step.</p>
+
+    <h2>My Goals</h2>
+    <p>I want to build strong skills in both software and hardware.</p>
+</main>
+    </pre>
+    <h3>section:</h3>
+    &lt;section&gt; — a semantic, block-level HTML tag used to group related content together under one topic, usually with its own heading.
+    <pre>
+Example: a "Services" section, a "Testimonials" section
+Different from &lt;div&gt; — &lt;div&gt; has no meaning, &lt;section&gt; says "this is a distinct chunk of content".
+Here's a focused example of just &lt;section&gt; in isolation:
+<section>
+    <h2>My Skills</h2>
+    <p>I am learning HTML and I already know Python and C programming.</p>
+</section>
+Key rules for &lt;section&gt;:
+
+Groups content that belongs together under one topic
+Should usually have its own heading (h2, h3, etc.) so it's clear what the section is about
+You can have many sections on one page (unlike &lt;main&gt;, which only appears once)
+A more complete example, showing multiple sections on one page:
+<main>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I am a Computer Engineering student at BZU, currently in my third semester.</p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <p>I know Python, C, and I am currently learning HTML step by step.</p>
+    </section>
+
+    <section>
+        <h2>My Goals</h2>
+        <p>I want to build strong projects that combine both software and hardware.</p>
+    </section>
+
+</main></pre>
+<h3>span:</h3>
+<pre>
+    &lt;span&gt;- Inline, NOT semantic
+
+Used to style or target a small piece of text inside a line, without breaking the flow
+Opposite of &lt;div&gt; in behavior: &lt;div&gt; is block-level, &lt;span&gt; is inline
+Example: making just one word bold/colored inside a sentence, without starting a new line.
+Here's a focused example of just &lt;span&gt; in isolation:
+<p>My favorite subject is <span style="color: rgb(102, 11, 163);">Computer Engineering</span> and I enjoy coding.</p>
+</pre>
+Comparing &lt;span&gt; to &lt;div&gt;:
+<!-- div = block-level, takes a new line -->
+<div>This starts on its own line</div>
+
+<!-- span = inline, stays inside the flow of text -->
+<p>This is a sentence with a <span style="color: blueviolet;">highlighted word</span> inside it.</p>
+Another common use case — marking specific words for later styling:
+<p>Farah is learning <span>HTML</span>, <span>Python</span>, and <span>C</span>.</p>
+</body>
+</html>
