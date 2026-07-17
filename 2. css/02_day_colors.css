@@ -1,0 +1,45 @@
+/* add coloring to html page  */
+/* to add color in the html page you just have to write the tag and than {} put these brackets and in these brackets you can add color of the text and background color or anything  */
+/* for example  */
+html{
+    background-color: darkolivegreen;
+    color: beige;
+}
+/* this is how whole page look olive  */
+/* you can also add text color or background color to different tags like that:  */
+h1{
+color: brown;
+}
+h2{
+color: hotpink;
+}
+h3{
+color: deepskyblue;
+}
+h4{
+color: blueviolet;
+}
+h5{
+    color: darkred;
+}
+h6{
+color: purple;
+}
+/* if you dont like the recommended color you can tap the color box and change the shade according to you want like this:  */
+div{
+    color: rgb(155, 208, 190);
+    background-color: rgb(134, 46, 46);
+}
+/* but it is bit hectic to add coloring in each individual tag or elements . or if want want our own specific color than it will become difficult to make same color or each tag , for this reason we use class in html,css to do work quickly, and change them easily.  */
+/* we address class using "." operatorwith the class name  */
+.class{
+    color: blue;
+    background-color: blanchedalmond;
+    
+}
+/* for a specific thing you can you id which is only one with a name.  */
+/* use # operator with name of the id to address.  */
+#one{
+    color: rgb(90, 6, 6);
+    background-color:rgb(104, 130, 206);
+}
