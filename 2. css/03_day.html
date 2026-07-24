@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text styling</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="03_day_font_family.css">
+</head>
+<body>
+    <h1>Text Styling</h1>
+
+    <!--
+        Note on <code> and <pre>:
+        <code> marks text as computer code (inline, within a sentence).
+        <pre> preserves whitespace and line breaks exactly as written.
+        We use them together (<pre><code>...</code></pre>) for multi-line
+        snippets so the formatting isn't lost and the content is
+        semantically marked as code, not just plain preformatted text.
+    -->
+    <h2>1. font-family</h2>
+    <p>font-family sets the typeface for text. Key things to know:</p>
+    <pre><code>p {
+  font-family: 'Poppins', Arial, sans-serif;
+}</code></pre>
+    <p>
+        How it works — the fallback stack:
+        You list fonts in order of preference, separated by commas. The browser uses the first one it can find/load,
+        and falls back to the next if it's unavailable. Always end with a generic family as a safety net.
+    </p>
+
+    <p>
+        Generic families (always include one at the end):
+        <br>serif — has small strokes at letter ends (e.g., Times New Roman)
+        <br>sans-serif — clean, no strokes (e.g., Arial, Helvetica)
+        <br>monospace — fixed-width, all characters same size (e.g., Courier New) — good for code
+        <br>cursive — script-like, handwriting style
+        <br>fantasy — decorative
+    </p>
+
+    <p>
+        Quoting rule: font names with spaces need quotes — 'Open Sans', but single-word names don't need them — Arial.
+    </p>
+
+    <p>Using custom/Google Fonts:</p>
+
+    <h3>using html:</h3>
+    <pre><code>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"&gt;</code></pre>
+
+    <h3>using css:</h3>
+    <pre><code>body {
+  font-family: 'Poppins', sans-serif;
+}</code></pre>
+
+    <h3>Or self-hosted with @font-face:</h3>
+    <pre><code>@font-face {
+  font-family: 'MyFont';
+  src: url('myfont.woff2') format('woff2');
+}
+body {
+  font-family: 'MyFont', sans-serif;
+}</code></pre>
+</body>
+</html>
