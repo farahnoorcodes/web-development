@@ -1,0 +1,71 @@
+html{
+    background-color: bisque;
+}
+h1{
+    color: rgb(119, 23, 23);
+}
+h3{
+color: rgb(95, 45, 9);
+}
+.ol{
+    text-decoration-line: overline;
+}
+.ul{
+    text-decoration-line: underline;
+}
+.none{
+    text-decoration-line: none;
+}
+.lt{text-decoration-line: line-through;
+
+}
+.multi{
+    text-decoration-line: overline underline line-through ;
+}
+#diff{
+    text-decoration-line: underline;
+    text-decoration-color:maroon;
+}
+#solid{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+#dotted{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+#double{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+#wavy{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
+#dash{
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+}
+#thick{
+    text-decoration-line: underline overline;
+    text-decoration-thickness: 7px;
+}
+#em{
+    text-decoration-line: underline overline;
+    text-decoration-thickness: 0.3em;
+}
+#auto{
+    text-decoration-line: overline underline;
+    text-decoration-thickness: auto;/* browser's default calculation */
+}
+#fromfont{
+    text-decoration-line: overline underline;
+    text-decoration-thickness: from-font; /* use the font's own defined thickness, if available */
+}
+#offset{
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+#short{
+    text-decoration: underline rgb(38, 38, 99) solid 2px;
+}

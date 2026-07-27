@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration</title>
+    <link rel="stylesheet" href="04_day_text_decoration.css">
+</head>
+<body>
+    <h1>Text Decortion</h1>
+    <h3>1. text decoration - line:</h3>
+    <p class="ol">overline: you can over line an element or tag on web page.</p>
+    <p class="ul">underline:  you can also do the same with under line.</p>
+    <p class="none">none: if don;t want any line.</p>
+    <p class="lt">line-through:  if you want line over  thr text.</p>
+    <p class="multi">you can apply many decorations on the line </p>
+    <h3 style="text-decoration: underline;">2. Text decoration - color:</h3>
+    Sets the color of the decoration line, independent of the text color.
+    <br>
+    Example idea: red underline under black text — the line color doesn't have to match the text color.
+    <br>
+    <h2 id="diff">text with different underline color</h2>
+    <h3 style="text-decoration-line: underline; text-decoration-color: brown ;">3. Text Decoration - style:</h3>
+    <p id="solid">solid: straight line with no break</p>
+    <p id="dotted">Dotted: dotted line instead of straight line.</p>
+    <p id="double">
+        double: double line instead of a single line
+    </p><p id="wavy">wavy: wavy line instead of a straight line</p>
+    <p id="dash">dashed: dash line will produce instead of simple dotted line</p>
+    <h3 style="text-decoration-line: underline; text-decoration-color: brown; text-decoration-style: double;"> 4. Text Decoration - thickness:</h3>
+    <p id="thick">you can adjust the thickness of the text decoration as you want. </p>
+    <p id="em">thickness is adjust using em</p>
+    <p id="auto">thickness using auto keyword</p>
+    <p id="fromfont">thickness using from-font keyword</p>
+    <h3 style="text-decoration: underline overline ; text-decoration-thickness: 7px;"> 5. Text Underline - offset:</h3>
+    <p id="offset">Adjusts the distance between the underline and the text itself. Only affects underline, not other lines. Useful for improving readability when text is close to its underline.</p>
+    <h3 style="text-decoration-line: underline overline; text-decoration-thickness: 5px;">6. shorthand syntax:</h3>
+    <p id="short">All the above can be combined into one shorthand property:<br>
+    text-decoration: [line] [color] [style] [thickness];<br>
+Order doesn't strictly matter, but this is the conventional order. You don't need to specify all of them — omitted parts use their defaults.</p>
+</body>
+</html>
