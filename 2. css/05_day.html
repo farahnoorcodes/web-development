@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <link rel="stylesheet" href="05_selector.css">
+</head>
+<body>
+    <h1>CSS Selector</h1>
+    <h3>Element selector:</h3>
+    <p>In CSS, an element selector targets HTML tags directly by their tag name — no dot, no hash, just the tag name itself.</p>
+    basic syntax:<br><br>
+    <pre>tagname {
+        property: value;
+    }</pre>
+    <div>hey! i'm div .</div>
+    <div>hey! i'm second div.</div>
+    <p>This means: every  tag on the page gets same color text at same background, same decoration and same size, etc — you're not targeting one specific paragraph, you're targeting the whole element type.</p>
+    <h3>Class selector</h3>
+    <p>A class selector targets any HTML element that has a matching class attribute — you can reuse the same class on as many elements as you want, which is the main thing that sets it apart from an ID selector (which must be unique).
+    <br><br>Basic syntax:</p>
+    <pre>.className {
+        property: value;
+    }</pre>
+    <p>Note the . (dot) before the class name — that's what tells CSS "this is a class selector."</p>
+    <br>Example:<br>
+    <p class="highlight">This paragraph is highlighted.</p>
+    <h2 class="highlight">This heading is also highlighted.</h2>
+    <span class="highlight">So is this text.</span>
+    <p>A few things worth knowing:<br>
+
+    One element can have multiple classes, separated by spaces:</p>
+    <p class="color decore">text with multiple classes.</p>
+    <pre>.color { background-color: rgb(129, 103, 71); }
+.decore{text-decoration-line: underline;}</pre>
+<p>Both rules apply to that one &lt;p&gt;.<br>
+Combine a class with an element selector to be more specific — this only targets <p> tags with the highlight class, not other elements that might also use it:</p>
+<p>Example:</p>
+<p class="red">paragraph with class red.</p>
+<p>CSS for this line specifically:</p>
+<pre>p.red { color: red; }</pre>
+<p>Naming convention: use lowercase, hyphen-separated names for multi-word classes (btn-primary, not btnPrimary or BtnPrimary) — this is the common CSS convention, similar to how you'd use camelCase in Java variable names.</p>
+<h3>id selector:</h3>
+<p>An ID selector targets the one element with a matching id attribute. Unlike a class, an ID should only be used once per page — it's meant to identify a single, unique element.
+<br><br>
+Basic syntax:</p>
+<pre>#idName {
+    property: value;
+}</pre>
+<p>Note the # (hash) before the name — that's what marks it as an ID selector, versus . for a class.</p>
+<p id="p">This is the text with id = p.</p>
+<h4>class & id together:</h4>
+<p id="header" class="high">text with id=header and class=high</p>
+<h3>Child selector:</h3>
+<p>A child selector (>) targets only the direct children of an element — one level down, not deeper.
+<br><br>
+Basic syntax:</p>
+<pre>parent > child {
+    property: value;
+}</pre>example:<br>
+<div class="container">
+    <p>Direct child — gets styled</p>
+    <section>
+        <p>Grandchild — does NOT get styled</p>
+    </section>
+</div>
+<p>For the paragraph to get styled, we write the CSS code like:</p>
+<pre>.container > p {
+    color: red;
+}</pre>
+<h3>descendant selector</h3>
+<p>A descendant selector targets an element that appears anywhere inside another element — no matter how many levels deep it's nested.<br><br>Written as two (or more) selectors separated by a space — that space is what makes it a descendant selector.</p>
+<div class="desc">
+    <p>Direct child — styled</p>
+    <section>
+        <p>Grandchild — also styled</p>
+         <article>
+            <!--The <article> tag is a semantic HTML element used to mark up a self-contained piece of content — something that could stand on its own and make sense even if pulled out and placed somewhere else (like a different page or an RSS feed). -->
+            <p>Great-grandchild — still styled</p>
+        </article>
+    </section>
+</div>
+<p>CSS for this code:</p>
+<pre>.desc p {
+    color: blue;
+}</pre>
+
+</body>
+</html>
