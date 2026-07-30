@@ -1,0 +1,32 @@
+html{/* Element Selector */ 
+    background-color: cadetblue;
+}
+div{/* Element Selector */ 
+    background-color:burlywood;/*it will colour all the div in html file burlywood*/
+}
+/* but if you don't want to make all the tag under the element selector to have the save design you will use different type of selector. */
+.highlight{/*class selector*/
+    color:rgb(104, 23, 23);/*it will color all the tag under the same class.*/
+}
+/*multiplr class selector*/
+.color{background-color: rgb(129, 103, 71);}
+.decore{text-decoration-line: underline;}
+/*more specific*/
+.red{color: rgb(70, 10, 10);}
+/*p.red is more specific than .red, so it wins — kept both on purpose to demonstrate specificity*/
+p.red { color: red; }
+/*ID selector:*/
+#p{
+    color:darkred;
+}
+/*combination:*/
+#header{font-size: larger; }
+.high{color: rgb(46, 8, 82);}
+/*child selector:*/
+.container > p {
+    color: red;
+}
+/*descendant selector:*/
+.desc p {
+    color: blue;
+}
